@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+/* navbar styles */
+nav a {
+  text-decoration: none;
+}
+.navSocialsIcon {
+  width: 20px;
+  text-decoration: none;
+  margin: 0 20px 0 0;
+}
+nav div#contactInfo {
+  height: 36px;
+  width: 100%;
+  background-color: #eef1ff;
+  padding: 2px 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+div#navContactDetails {
+  display: flex;
+  flex-direction: row;
+  color: #5271ff;
+}
+div#navContactDetails p {
+  display: inline;
+}
+div#navPhone,
+div#navMail,
+div#navLocation {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-right: 1px solid #d9d9d9;
+}
+div#navPhone ion-icon,
+div#navMail ion-icon,
+div#navLocation ion-icon {
+  margin-right: 4px;
+}
+div#navLocation {
+  border: none;
+}
+#navBar {
+  padding: 8px 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+div#navBar button {
+  background-color: #5271ff;
+  color: #f9f9f9;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+}
+div#navBar button i {
+  margin-right: 4px;
+}
+a#navBarLogo img {
+  width: 160px;
+}
+ul#navBarMenuList {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+  margin-bottom: 0;
+}
+ul#navBarMenuList li {
+  text-decoration: none;
+  list-style: none;
+  padding: 0 20px 0;
+}
+ul#navBarMenuList li a {
+  color: #2a2a2a;
+}
+ul#navBarMenuList li a.active {
+  color: #5271ff;
+  font-weight: 500;
+}
+
+/* Mobile Screens NavBar */
+nav#mobileScreensNavBar {
+  display: none;
+}
+img#smnavBarLogo {
+  width: 120px;
+}
+#mobileScreensNavBar button {
+  border: none;
+  background-color: transparent;
+}
+#mobileScreensNavBar i {
+  font-size: 20px;
+  color: #2a2a2a;
+}
+#smNavBarContent {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  width: 100%;
+  height: fit-content;
+}
+#smNavBarContent {
+  display: none;
+  border-top: 1px solid #d9d9d9;
+  z-index: 99991;
+  transition: ease-in-out 2s;
+}
+#smNavBarSocials {
+  float: left;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eef1ff;
+  padding: 12px 28px;
+  border-bottom: 1px solid #d9d9d9;
+  z-index: 9999;
+}
+#smNavBarSocials a img {
+  width: 24px;
+  margin: 16px 0;
+}
+#smNavBarMenu {
+  float: right;
+  list-style: none;
+  width: 70%;
+  z-index: 9999;
+}
+#smNavBarMenu li {
+  margin: 12px 0;
+  text-align: center;
+}
+#smNavBarMenu li a {
+  text-decoration: none;
+  color: #2a2a2a;
+}
+#smNavBarMenu li a.active {
+  color: #5271ff;
+}
+#smNavBarContent button {
+  background-color: #5271ff;
+  color: #f9f9f9;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  border: none;
+}
+/* Hero Section Styles */
+section#hero {
+  background-color: #f9f9f9;
+}
+.row {
+  width: 100%;
+}
+#heroMainLeft {
+  padding: 100px 52px;
+  color: #2a2a2a;
+}
+#heroMainHeading {
+  color: #2a2a2a;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+#heroSubHeading {
+  font-size: 16px;
+  color: #424141;
+  margin-bottom: 16px;
+}
+a.venturaButton {
+  color: #f9f9f9;
+  background-color: #5271ff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  margin: 0 0 20px 0;
+}
+a.venturaButton i {
+  transform: rotate(-45deg);
+  margin-left: 4px;
+}
+#heroKnowMore {
+  color: #5271ff;
+  font-size: 16px;
+  text-decoration: none;
+  margin-left: 60px;
+}
+#heroStatBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: center; */
+  margin-top: 24px;
+}
+#heroStatBar img {
+  width: 160px;
+  margin-right: 4px;
+}
+#heroStatBar p {
+  margin-bottom: 0;
+  color: #d9d9d9;
+  font-weight: #9c9c9c;
+  /* opacity: 0.9; */
+  font-size: 14px;
+}
+@media screen and (max-width: 600px) {
+  nav {
+    display: none;
+  }
+  #heroMainRight img {
+    width: 100% !important;
+    margin: 24px 12px;
+  }
+  #heroMainRight {
+    text-align: center !important;
+  }
+}
+#heroMainRight {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: center;
+}
+#heroMainRight img {
+  width: fit-content;
+  /* margin-bottom: -400px; */
+}
+@media only screen and (max-width: 900px) {
+  nav#largeScreensNavBar {
+    display: none;
+  }
+  nav#mobileScreensNavBar {
+    display: block;
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #heroMainLeft {
+    padding: 12px 28px 36px !important;
+  }
+  #heroMainLeft {
+    padding: 36px 80px;
+  }
+  #heroMainHeading {
+    margin-bottom: 12px;
+    font-size: 32px !important;
+    /* text-align: center; */
+  }
+  #heroSubHeading {
+    font-size: 14px !important;
+    margin-bottom: 12px;
+    /* text-align: center; */
+  }
+  /* a.venturaButton {
+    margin: 0px 28px;
+  } */
+  #heroKnowMore {
+    margin: 0px 32px;
+  }
+  #heroStatBar p {
+    font-size: 14px;
+  }
+  #heroStatBar {
+    margin-top: 20px;
+  }
+}
