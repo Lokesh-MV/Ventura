@@ -91,7 +91,9 @@ ul#navBarMenuList li a.active {
   color: #5271ff;
   font-weight: 500;
 }
-
+ul#navBarMenuList li a:hover {
+  color: #5271ff;
+}
 /* Mobile Screens NavBar */
 nav#mobileScreensNavBar {
   display: none;
@@ -228,7 +230,7 @@ a.venturaButton i {
     margin: 24px 12px;
   }
   #heroMainRight {
-    text-align: center !important;
+    align-self: end;
   }
 }
 #heroMainRight {
@@ -280,5 +282,584 @@ a.venturaButton i {
   }
   #heroStatBar {
     margin-top: 20px;
+  }
+}
+/* How it works section */
+.row {
+  width: 100%;
+  margin: 0;
+}
+section#howItWorks {
+  background-color: #fff;
+  padding: 24px 48px;
+}
+.VenturaSectionHeading {
+  font-size: 24px;
+  color: #2a2a2a;
+  text-align: center;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+.VenturaSectionSubheading {
+  font-size: 14px;
+  color: #a6a6a6;
+  text-align: center;
+  /* width: 30%; */
+  margin-bottom: 24px;
+}
+.processDiv {
+  text-align: center;
+  padding: 4px 24px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.processImage {
+  width: 88px;
+  margin-bottom: 8px;
+}
+.processTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #2a2a2a;
+}
+.processText {
+  color: #a6a6a6;
+  font-size: 14px;
+  font-weight: 500;
+}
+.processDiv4 .processText,
+.processDiv5 .processText {
+  width: 60%;
+}
+@media only screen and (max-width: 700px) {
+  section#howItWorks {
+    padding: 24px 32px;
+  }
+  section#countries {
+    padding: 24px 28px !important;
+  }
+  .countryCard {
+    margin-bottom: 36px !important;
+  }
+  .processDiv4 .processText,
+  .processDiv5 .processText {
+    width: 100%;
+  }
+}
+
+/* Services Section */
+section#services {
+  padding: 24px 48px;
+}
+.serviceCardOuterDiv {
+  padding: 8px;
+}
+.serviceCard {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.serviceCard img.serviceImage {
+  width: 80px;
+  margin-bottom: 16px;
+}
+.serviceCard p.serviceTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2a2a2a;
+  margin-bottom: 8px;
+}
+.serviceText {
+  text-align: center;
+  color: #b7b7b7;
+  width: 90%;
+  margin-bottom: 0;
+}
+.serviceCard:hover {
+  background-color: #eeecec;
+}
+
+/* Actual Stats Section */
+div#numbers {
+  margin: 40px 0;
+  background-color: #5271ff;
+  color: #f9f9f9;
+  padding: 20px 28px;
+}
+div.statDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+p.num {
+  font-family: "Poppins", sans-serif;
+  font-size: 52px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+p.numText {
+  font-size: 16px;
+  width: 70%;
+  text-align: center;
+}
+
+/* Countries Styles Section */
+section#countries {
+  padding: 24px 48px;
+}
+.countryCard {
+  background-color: #f2f2f2;
+  padding: 16px;
+  border-radius: 8px;
+  margin: 0px 12px 32px;
+}
+.countryFlag {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.cnt {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2a2a2a;
+  margin-bottom: 0;
+}
+.cntDetail {
+  font-size: 12px;
+  color: #727272;
+  margin-bottom: 0;
+}
+.countryFlagImage {
+  /* width: 24px; */
+  height: 28px;
+  border-radius: 2px;
+}
+.countryImage {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+.countryText {
+  font-size: 14px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+/* Testimonials Section */
+section#testimonials {
+  padding: 24px 48px;
+}
+div.testimonialCards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow-x: scroll;
+}
+div.testimonialCard {
+  min-width: 300px;
+  background-color: #f2f2f2;
+  padding: 12px;
+  margin: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+div.testimonialCard hr {
+  opacity: 0.1;
+}
+.personDetails {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.personImage {
+  /* width: 48px; */
+  margin-left: 8px;
+  width: 52px;
+  height: 40px;
+  border-radius: 4px;
+}
+.personName {
+  font-size: 16px;
+  color: #a6a6a6;
+  margin-bottom: 0;
+  text-align: end;
+}
+.personUniversity {
+  color: #5271ff;
+  margin-bottom: 0;
+  font-size: 12px;
+}
+@media only screen and (max-width: 600px) {
+  section#testimonials {
+    padding: 24px 24px;
+  }
+  section#blog {
+    padding: 24px 20px;
+  }
+}
+/* Blog section styles */
+#blog {
+  padding: 24px 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#viewButtonBlog {
+  align-self: flex-end;
+  margin-right: 20px;
+}
+#viewButtonBlog ion-icon {
+  margin-left: 4px;
+  transform: rotate(-45deg);
+}
+.blogOuterDiv {
+  padding: 20px;
+}
+.blogKnowMore {
+  text-decoration: none;
+}
+.blogCard {
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #f2f2f2;
+}
+.blogImage {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+.blogTitle {
+  font-size: 20px;
+  color: #2a2a2a;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.blogSubTitle {
+  font-size: 12px;
+  color: #5271ff;
+  margin-bottom: 8px;
+}
+.blogText {
+  color: #2a2a2a;
+}
+.blogCard button.venturaButton {
+  margin-bottom: 12px;
+}
+.blogAllButton i {
+  transform: rotate(-45deg);
+}
+
+.VenturaSectionSubheading {
+  margin-bottom: 0;
+}
+
+/* Get in Touch section Styles */
+section#contact {
+  padding: 24px 60px;
+}
+.getInTouchDetails > p {
+  font-size: 16px;
+  color: #9c9c9c !important;
+}
+#contactSectionLeft {
+  padding: 16px 16px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.getInTouchDetails ion-icon {
+  color: #5271ff;
+  margin-right: 4px;
+}
+.detailContact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #9c9c9c !important;
+}
+#SocialsTouchHeading {
+  font-size: 20px;
+  font-weight: 600;
+  color: #9c9c9c;
+  margin-bottom: 0;
+}
+#SocialsTouchSubheading {
+  color: #9c9c9c;
+  margin-bottom: 8px;
+}
+div#SocialsTouch #navSocials {
+  margin-top: 12px;
+}
+div#SocialsTouch #navSocials a {
+  text-decoration: none;
+}
+div#SocialsTouch #navSocials a img {
+  width: 28px;
+}
+div#SocialsTouch #navSocials a:not(:first-child) {
+  margin-left: 20px;
+}
+#contactSectionRight {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#contactForm label {
+  margin-bottom: 8px;
+  color: #2a2a2a;
+}
+#contactForm input {
+  margin-bottom: 20px;
+  padding: 8px 6px;
+  font-size: 16px;
+  border: 1px solid #c7c7c7;
+  border-radius: 4px;
+  width: 450px;
+}
+#contactForm input::placeholder,
+textarea::placeholder {
+  color: #c7c7c7;
+}
+textarea {
+  width: 450px;
+  padding: 6px;
+  border: 1px solid #c7c7c7;
+  border-radius: 4px;
+  height: 120px;
+}
+.messageButton {
+  padding: 8px 16px;
+  color: #f9f9f9;
+  background-color: #5271ff;
+  border-radius: 4px;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 28px;
+  align-self: center;
+}
+.messageButton ion-icon {
+  margin-left: 6px;
+}
+section#footer {
+  background-color: #eef1ff;
+  padding: 24px 48px;
+  z-index: 9999999999999;
+  position: relative;
+}
+#footerLogo {
+  width: 140px;
+  margin-bottom: 8px;
+}
+#footerRowOne {
+  padding-left: 32px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#footerLogoText {
+  width: 90%;
+  color: #a6a6a6;
+}
+#footerRowTwo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+}
+#footerRowTwo > p {
+  margin-bottom: 12px;
+  color: #2a2a2a;
+}
+#footerRowTwo ul {
+  list-style: none;
+}
+#footerRowTwo ul li a {
+  text-decoration: none;
+  margin-left: -32px;
+  color: #525255;
+}
+#footerRowTwo ul li {
+  margin-bottom: 8px;
+}
+#footerRowTwo ul li a:hover {
+  color: #5271ff;
+  transition: 1s;
+}
+#footerRowThree {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footerContact ion-icon {
+  color: #5271ff;
+  margin-right: 6px;
+}
+.footerContact {
+  color: #525255;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+section#footer #navSocials {
+  margin-top: 16px;
+}
+section#footer #navSocials a {
+  text-decoration: none;
+}
+section#footer #navSocials a img {
+  width: 28px;
+}
+section#footer #navSocials a:not(:first-child) {
+  margin-left: 16px;
+}
+#copyright {
+  color: #a0a0a2;
+  text-align: center;
+  font-size: 14px;
+}
+#copyright a {
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+.VenturaSectionSubheading {
+  margin-bottom: 20px;
+}
+.blogText a {
+  text-decoration: none;
+}
+/* Contact Form Media Queries */
+@media only screen and (max-width: 600px) {
+  #contactForm input,
+  textarea {
+    width: 95%;
+  }
+  section#contact {
+    padding: 8px 24px 24px;
+  }
+  section#contact #VenturaSectionSubheading {
+    margin-bottom: 8px;
+  }
+  #formOuterDiv {
+    width: 100%;
+  }
+  section#footer #navSocials a img.navSocialsIcon {
+    margin: 0px 4px;
+  }
+  #footerRowTwo {
+    align-items: flex-start;
+    padding-bottom: 0px;
+  }
+  section#footer {
+    padding: 24px;
+  }
+  #copyright {
+    margin-top: 24px;
+  }
+}
+
+/* Individual Blog Styles */
+section#blogInternalPage {
+  position: relative;
+  width: 100%;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: row;
+}
+#blogBody {
+  background-color: #f9f9f9;
+  padding: 20px 48px;
+  width: 70%;
+}
+p.individualBlogTitle {
+  color: #2a2a2a;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.blogInsideImage {
+  /* width: 80%; */
+  width: 100%;
+  /* height: 400px; */
+  margin: 20px 0px;
+  border-radius: 8px;
+}
+.blogInsideText span {
+  display: block;
+  color: #2a2a2a;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.7;
+}
+.blogInsideText {
+  color: #2a2a2a;
+  font-size: 16px;
+  color: #9c9c9c;
+}
+section#otherBlogsSection {
+  border-left: 1px solid #d9d9d9;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  position: sticky;
+  right: 0;
+  top: 20;
+  margin: 12px 0;
+}
+div.blogCardInternal {
+  padding: 4px;
+  background-color: #eef1ff;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 4px;
+  height: 110px;
+  margin-bottom: 20px;
+}
+img.blogCardInternalImage {
+  height: 80px;
+  border-radius: 4px;
+  margin: 4px 16px 4px 4px;
+}
+.blogCardTextInternalText {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #a6a6a6;
+}
+@media only screen and (max-width: 700px) {
+  #blogBody {
+    width: 100%;
+    padding: 24px;
+  }
+  section#otherBlogsSection {
+    display: none !important;
+  }
+  #blogBody {
+    width: 100%;
   }
 }
