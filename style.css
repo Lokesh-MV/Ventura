@@ -566,8 +566,24 @@ div.testimonialCard hr {
 }
 
 /* Get in Touch section Styles */
+div#mobileSectionContact {
+  display: none;
+}
+@media only screen and (max-width: 900px) {
+  div#mobileSectionContact {
+    display: block;
+    padding: 20px;
+  }
+  section#contact {
+    display: none !important;
+  }
+}
 section#contact {
   padding: 24px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 .getInTouchDetails > p {
   font-size: 16px;
@@ -756,6 +772,7 @@ html {
   textarea {
     width: 95%;
   }
+
   section#contact {
     padding: 8px 24px 24px;
   }
