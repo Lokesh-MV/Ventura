@@ -56,6 +56,15 @@ div#navLocation {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  background-color: #fff;
+}
+nav#largeScreensNavBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* margin-bottom: 100px !important; */
+  z-index: 9999999999999;
 }
 div#navBar button {
   background-color: #5271ff;
@@ -98,6 +107,7 @@ ul#navBarMenuList li a:hover {
 nav#mobileScreensNavBar {
   display: none;
 }
+
 img#smnavBarLogo {
   width: 120px;
 }
@@ -846,6 +856,7 @@ section#otherBlogsSection {
   right: 0;
   top: 20;
   margin: 12px 0;
+  position: fixed;
 }
 div.blogCardInternal {
   padding: 4px;
@@ -878,5 +889,15 @@ img.blogCardInternalImage {
   }
   #blogBody {
     width: 100%;
+  }
+}
+section#hero,
+section#blogInternalPage {
+  margin-top: 90px;
+}
+@media only screen and (max-width: 900px) {
+  section#hero,
+  section#blogInternalPage {
+    margin-top: 0px !important;
   }
 }
