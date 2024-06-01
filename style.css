@@ -892,12 +892,72 @@ img.blogCardInternalImage {
   }
 }
 section#hero,
-section#blogInternalPage {
+section#blogInternalPage,
+.servicesInternalPage {
   margin-top: 90px;
 }
 @media only screen and (max-width: 900px) {
   section#hero,
-  section#blogInternalPage {
+  section#blogInternalPage,
+  .servicesInternalPage {
     margin-top: 0px !important;
+  }
+}
+
+/* Services Internal Pages */
+.servicesInternalPage {
+  padding: 24px 48px;
+}
+.serviceInternalImage {
+  width: 70%;
+}
+.serviceTopLeft {
+  text-align: center;
+}
+.serviceTopRight {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.serviceTitleInternal {
+  font-size: 36px;
+  font-weight: 600;
+  color: #2a2a2a;
+  margin-bottom: 0;
+}
+.serviceTitleInternal span {
+  color: #5271ff;
+}
+.serviceTextInternal {
+  color: #a6a6a6;
+  width: 80%;
+}
+.serviceBriefTitle {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+.serviceDescription,
+.serviceMeritsList {
+  color: #a6a6a6;
+}
+.serviceMeritsList li span {
+  color: #7a7a7a;
+}
+.serviceMeritsList li > p.serviceDescription {
+  margin-bottom: 8px;
+}
+@media only screen and (max-width: 600px) {
+  .servicesInternalPage {
+    padding: 20px;
+  }
+  .serviceTextInternal {
+    width: 100%;
+  }
+  .serviceTitleInternal {
+    font-size: 24px;
   }
 }
