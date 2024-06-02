@@ -905,7 +905,8 @@ section#blogInternalPage,
 }
 
 /* Services Internal Pages */
-.servicesInternalPage {
+.servicesInternalPage,
+.countriesInternalPage {
   padding: 24px 48px;
 }
 .serviceInternalImage {
@@ -952,7 +953,8 @@ section#blogInternalPage,
   margin-bottom: 8px;
 }
 @media only screen and (max-width: 600px) {
-  .servicesInternalPage {
+  .servicesInternalPage,
+  .countriesInternalPage {
     padding: 20px;
   }
   .serviceTextInternal {
@@ -961,4 +963,19 @@ section#blogInternalPage,
   .serviceTitleInternal {
     font-size: 24px;
   }
+  .countrySpecificImage {
+    margin-top: 0 !important;
+  }
+}
+.countrySpecificImage {
+  /* height: 70vh; */
+  width: 100%;
+  margin: 5% 0px 2%;
+  /* border-radius: 48px !important; */
+}
+.countriesInternalPage > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
