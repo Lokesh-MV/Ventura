@@ -909,7 +909,8 @@ section#blogInternalPage,
   padding: 24px 48px;
 }
 .serviceInternalImage {
-  width: 70%;
+  width: 80%;
+  margin: 36px 0;
 }
 .serviceTopLeft {
   text-align: center;

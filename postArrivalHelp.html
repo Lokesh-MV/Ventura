@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scholarship Support - Ventura Overseas Education Consultancy</title>
+    <!-- styles section -->
+    <!-- Bootstrap Css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fontawsome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="Assets/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Large Screens Navbar -->
+    <nav id="largeScreensNavBar">
+      <div id="contactInfo">
+        <div id="navSocials">
+          <a href="#">
+            <img
+              src="Assets/instagramIcon.png"
+              alt="Instagram Icon"
+              class="navSocialsIcon"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="Assets/linkedInIcon.png"
+              alt="LinkedIn Icon"
+              class="navSocialsIcon"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="Assets/youtubeIcon.png"
+              alt="Youtube Icon"
+              class="navSocialsIcon"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="Assets/facebookIcon.png"
+              alt="Facebook Icon"
+              class="navSocialsIcon"
+            />
+          </a>
+        </div>
+
+        <div id="navContactDetails">
+          <div id="navPhone">
+            <ion-icon name="call-outline"></ion-icon>
+            <p style="margin-bottom: 0">+91 XXXXX XXXXX</p>
+          </div>
+          <div id="navMail">
+            <ion-icon name="mail-outline"></ion-icon>
+            <p style="margin-bottom: 0">info@venturaoverseas.com</p>
+          </div>
+          <div id="navLocation">
+            <ion-icon name="location-outline"></ion-icon>
+            <p style="margin-bottom: 0">Nellore, Andhra Pradesh</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="navBar">
+        <a href="index.html" id="navBarLogo">
+          <img src="Assets/VenturaLogo.png" alt="Logo" id="smnavBarLogo" />
+        </a>
+        <ul id="navBarMenuList">
+          <li><a href="index.html"> Home </a></li>
+          <li><a href="index.html#services" class="active"> Services </a></li>
+          <li><a href="#"> Connect </a></li>
+          <li><a href="index.html#countries"> Countries </a></li>
+          <li><a href="index.html#blog"> Blog </a></li>
+        </ul>
+        <button onclick="location.href='index.html#contact'">
+          <i class="fa-solid fa-headset"></i> Book Free Consultation
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Section Navbar -->
+
+    <nav id="mobileScreensNavBar">
+      <a href="#">
+        <img
+          src="Assets/VenturaLogo.png"
+          alt="Ventura Consultancy Logo"
+          id="smnavBarLogo"
+        />
+      </a>
+      <button onclick="barClicked()">
+        <i class="fa-solid fa-bars" id="Hamburger"></i>
+      </button>
+    </nav>
+    <div id="smNavBarContent">
+      <div id="smNavBarSocials">
+        <a href="#">
+          <img
+            src="Assets/instagramIcon.png"
+            alt="Instagram Icon"
+            class="navSocialsIcon"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="Assets/linkedInIcon.png"
+            alt="LinkedIn Icon"
+            class="navSocialsIcon"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="Assets/youtubeIcon.png"
+            alt="Youtube Icon"
+            class="navSocialsIcon"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="Assets/facebookIcon.png"
+            alt="Facebook Icon"
+            class="navSocialsIcon"
+          />
+        </a>
+      </div>
+      <ul id="smNavBarMenu">
+        <li>
+          <a href="#" class="active">Home</a>
+        </li>
+        <li>
+          <a href="#">Services</a>
+        </li>
+        <li>
+          <a href="#">Connect</a>
+        </li>
+        <li>
+          <a href="#">Countries</a>
+        </li>
+        <li>
+          <a href="#">Blog</a>
+        </li>
+        <li>
+          <a onclick="location.href='index.html#contact'" class="venturaButton">
+            <i class="fa-solid fa-headset"></i> Book Free Consultation
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Services Page -->
+    <section class="servicesInternalPage">
+      <div class="row">
+        <div class="col-md-6 serviceTopLeft">
+          <img
+            src="Assets/postArrivalService.png"
+            alt="Post Arrival Image"
+            class="serviceInternalImage"
+          />
+        </div>
+        <div class="col-md-6 serviceTopRight">
+          <p class="serviceTitleInternal">
+            <span> Settling In Smoothly </span> For Your Academic
+            <span>Success Abroad</span>
+          </p>
+          <p class="serviceTextInternal">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis
+            cumque voluptatem, veniam facere odio unde?
+          </p>
+        </div>
+      </div>
+
+      <p class="serviceBriefTitle">
+        Post-Arrival Help: Ensuring a Smooth Transition to Your New Life Abroad
+      </p>
+      <p class="serviceDescription">
+        Moving to a new country for your studies is an exciting adventure, but
+        it can also be challenging. At Ventura Overseas Consultancy, we
+        understand the importance of a smooth transition after your arrival. Our
+        comprehensive post-arrival support services are designed to help you
+        settle in quickly and comfortably, allowing you to focus on your studies
+        and enjoy your new environment.
+      </p>
+      <p class="serviceBriefTitle">Why Choose Ventura for Post-Arrival Help?</p>
+      <ul class="serviceMeritsList">
+        <li>
+          <p class="serviceDescription">
+            <span>Comprehensive Support:</span>
+            We provide a wide range of services to address all aspects of your
+            transition, from initial arrival to settling into your new
+            community.
+          </p>
+        </li>
+        <li>
+          <p class="serviceDescription">
+            <span>Personalized Assistance: </span>
+            We tailor our support to your specific needs and concerns, ensuring
+            you receive the help that's most relevant to you.
+          </p>
+        </li>
+        <li>
+          <p class="serviceDescription">
+            <span> Experienced Guidance: </span>
+            Our team has extensive experience in assisting international
+            students, offering expert advice and practical solutions for a
+            smooth transition.
+          </p>
+        </li>
+      </ul>
+      <p class="serviceBriefTitle">
+        What's Included in Our Post-Arrival Help Services?
+      </p>
+      <ul class="serviceMeritsList">
+        <li>
+          <p class="serviceDescription">
+            <span>Airport Pickup: </span>
+            We arrange for your pickup from the airport, ensuring you have a
+            hassle-free arrival and safe transportation to your accommodation.
+          </p>
+        </li>
+        <li>
+          <p class="serviceDescription">
+            <span>Accommodation Assistance:</span>
+            We help you find suitable housing, whether it's on-campus or
+            off-campus, and provide guidance on signing leases and understanding
+            local rental agreements.
+          </p>
+        </li>
+        <li>
+          <p class="serviceDescription">
+            <span>Orientation Programs: </span>
+            We organize orientation sessions to familiarize you with the
+            university campus, local amenities, public transportation, and
+            cultural norms.
+          </p>
+        </li>
+        <li>
+          <p class="serviceDescription">
+            <span>Banking and Finances: </span>
+            We assist you in opening a local bank account, understanding the
+            financial system, and managing your finances effectively.
+          </p>
+        </li>
+        <li>
+          <p class="serviceDescription">
+            <span>Healthcare Guidance: </span>
+            We provide information on local healthcare services, help you
+            understand your health insurance, and guide you on accessing medical
+            care when needed.
+          </p>
+        </li>
+        <li>
+          <p class="serviceDescription">
+            <span>Legal and Documentation Support: </span>
+            Our team helps you with necessary legal formalities, including
+            registering with local authorities, extending visas, and other
+            documentation requirements.
+          </p>
+        </li>
+        <li>
+          <p class="serviceDescription">
+            <span>Academic Support:</span>
+            We offer guidance on course registration, understanding the academic
+            system, and accessing university resources such as libraries and
+            study groups.
+          </p>
+        </li>
+        <li>
+          <p class="serviceDescription">
+            <span>Emergency Assistance: </span>
+            We provide 24/7 emergency support, offering help and guidance in
+            case of any unforeseen issues or emergencies.
+          </p>
+        </li>
+      </ul>
+      <p class="serviceDescription">
+        With Ventura's post-arrival help services, transitioning to your new
+        life abroad becomes a smooth and stress-free experience. Let us handle
+        the complexities, so you can focus on thriving in your new academic
+        environment and making the most of your international education journey!
+      </p>
+    </section>
+
+    <!-- Footer Section -->
+    <section id="footer">
+      <div class="row">
+        <div class="col-md-4" style="padding: 16px" id="footerRowOne">
+          <img
+            src="Assets/VenturaLogo.png"
+            alt="Ventura Logo"
+            id="footerLogo"
+          />
+          <p id="footerLogoText">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+            asperiores repellendus quisquam suscipit qui, voluptates ipsa sunt
+          </p>
+        </div>
+        <div class="col-md-4" id="footerRowTwo">
+          <p class="VenturaSectionHeading">Important links</p>
+          <ul>
+            <li><a href="#countries">Education Destinations</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#">Mentor Connect</a></li>
+            <li><a href="#">Preparation Material</a></li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4" id="footerRowThree">
+          <p class="footerContact">
+            <ion-icon name="call-outline"></ion-icon> +91 XXXXX XXXXX
+          </p>
+          <p class="footerContact">
+            <ion-icon name="mail-outline"></ion-icon> info@venturaoverseas.com
+          </p>
+          <p class="footerContact">
+            <ion-icon name="location-outline"></ion-icon>Nellore, Andhra Pradesh
+          </p>
+          <div id="navSocials">
+            <a href="#">
+              <img
+                src="Assets/instagramIcon.png"
+                alt="Instagram Icon"
+                class="navSocialsIcon"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="Assets/linkedInIcon.png"
+                alt="LinkedIn Icon"
+                class="navSocialsIcon"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="Assets/youtubeIcon.png"
+                alt="Youtube Icon"
+                class="navSocialsIcon"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="Assets/facebookIcon.png"
+                alt="Facebook Icon"
+                class="navSocialsIcon"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <p id="copyright">
+        copyrights © All Rights Reserved by Ventura Overseas Consultancy.
+        Designed by
+        <a href="https://brutanix.com" target="_blank">Brutanix Studios</a>
+      </p>
+    </section>
+
+    <!-- Ion Icons Link -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="index.js"></script>
+  </body>
+</html>
