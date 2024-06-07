@@ -968,14 +968,80 @@ section#blogInternalPage,
   }
 }
 .countrySpecificImage {
-  /* height: 70vh; */
   width: 100%;
   margin: 5% 0px 2%;
-  /* border-radius: 48px !important; */
 }
 .countriesInternalPage > div {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+/* Mentor Connect page styles */
+.mentorCard {
+  margin: 8px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: #eef1ff;
+}
+@media only screen and (max-width: 900px) {
+  .mentorCard {
+    margin-bottom: 28px;
+  }
+  
+}
+.mentorCard p {
+  margin-bottom: 0;
+}
+.mentorDetails {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.mentorCountry {
+  color: #5271ff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.mentorUniversity {
+  color: #9c9c9c;
+  font-size: 12px;
+}
+.mentorCountryFlag {
+  height: 32px;
+  border-radius: 4px;
+}
+.mentorImgSocials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.mentorPicture {
+  width: 80%;
+  height: 220px;
+  margin: 12px 8px 12px 0px;
+  border-radius: 4px;
+}
+.mentorSocials {
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.mentorSocials a img {
+  width: 24px;
+}
+button.connectButton {
+  width: 100%;
+  margin-bottom: 8px;
+  color: #f9f9f9;
+  background-color: #5271ff;
+  padding: 4px;
+  border: none;
+  border-radius: 4px;
 }
