@@ -34,28 +34,28 @@
     <nav id="largeScreensNavBar">
       <div id="contactInfo">
         <div id="navSocials">
-          <a href="#">
+          <a href="https://www.instagram.com" target="_blank">
             <img
               src="Assets/instagramIcon.png"
               alt="Instagram Icon"
               class="navSocialsIcon"
             />
           </a>
-          <a href="#">
+          <a href="https://www.linkedin.com" target="_blank">
             <img
               src="Assets/linkedInIcon.png"
               alt="LinkedIn Icon"
               class="navSocialsIcon"
             />
           </a>
-          <a href="#">
+          <a href="https://www.youtube.com" target="_blank">
             <img
               src="Assets/youtubeIcon.png"
               alt="Youtube Icon"
               class="navSocialsIcon"
             />
           </a>
-          <a href="#">
+          <a href="https://www.facebook.com" target="_blank">
             <img
               src="Assets/facebookIcon.png"
               alt="Facebook Icon"
@@ -87,7 +87,7 @@
         <ul id="navBarMenuList">
           <li><a href="index.html" class="active"> Home </a></li>
           <li><a href="#services"> Services </a></li>
-          <li><a href="connect.html"> Connect </a></li>
+          <li><a href="#connect"> Connect </a></li>
           <li><a href="#countries"> Countries </a></li>
           <li><a href="#blog"> Blog </a></li>
         </ul>
@@ -98,72 +98,77 @@
     </nav>
 
     <!-- Mobile Section Navbar -->
-
-    <nav id="mobileScreensNavBar">
-      <a href="#">
-        <img
-          src="Assets/VenturaLogo.png"
-          alt="Ventura Consultancy Logo"
-          id="smnavBarLogo"
-        />
-      </a>
-      <button onclick="barClicked()">
-        <i class="fa-solid fa-bars" id="Hamburger"></i>
-      </button>
-    </nav>
-    <div id="smNavBarContent">
-      <div id="smNavBarSocials">
+    <div id="mobileNavOuter">
+      <nav id="mobileScreensNavBar">
         <a href="#">
           <img
-            src="Assets/instagramIcon.png"
-            alt="Instagram Icon"
-            class="navSocialsIcon"
+            src="Assets/VenturaLogo.png"
+            alt="Ventura Consultancy Logo"
+            id="smnavBarLogo"
           />
         </a>
-        <a href="#">
-          <img
-            src="Assets/linkedInIcon.png"
-            alt="LinkedIn Icon"
-            class="navSocialsIcon"
-          />
-        </a>
-        <a href="#">
-          <img
-            src="Assets/youtubeIcon.png"
-            alt="Youtube Icon"
-            class="navSocialsIcon"
-          />
-        </a>
-        <a href="#">
-          <img
-            src="Assets/facebookIcon.png"
-            alt="Facebook Icon"
-            class="navSocialsIcon"
-          />
-        </a>
-      </div>
-      <ul id="smNavBarMenu">
-        <li>
-          <a href="index.html" class="active">Home</a>
-        </li>
-        <li>
-          <a href="#">Services</a>
-        </li>
-        <li>
-          <a href="#">Connect</a>
-        </li>
-        <li>
-          <a href="#">Countries</a>
-        </li>
-        <li>
-          <a href="#">Blog</a>
-        </li>
-        <li>
-          <a onclick="location.href='index.html#contact'" class="venturaButton">
-            <i class="fa-solid fa-headset"></i> Book Free Consultation
+        <button onclick="barClicked()">
+          <i class="fa-solid fa-bars" id="Hamburger"></i>
+        </button>
+      </nav>
+      <div id="smNavBarContent" style="background-color: #f9f9f9">
+        <div id="smNavBarSocials">
+          <a href="https://www.instagram.com">
+            <img
+              src="Assets/instagramIcon.png"
+              alt="Instagram Icon"
+              class="navSocialsIcon"
+            />
           </a>
-        </li>
-      </ul>
+          <a href="https://www.linkedin.com">
+            <img
+              src="Assets/linkedInIcon.png"
+              alt="LinkedIn Icon"
+              class="navSocialsIcon"
+            />
+          </a>
+          <a href="https://www.youtube.com">
+            <img
+              src="Assets/youtubeIcon.png"
+              alt="Youtube Icon"
+              class="navSocialsIcon"
+            />
+          </a>
+          <a href="https://www.facebook.com">
+            <img
+              src="Assets/facebookIcon.png"
+              alt="Facebook Icon"
+              class="navSocialsIcon"
+            />
+          </a>
+        </div>
+        <ul id="smNavBarMenu">
+          <li>
+            <a href="index.html" class="active">Home</a>
+          </li>
+          <li>
+            <a href="#services">Services</a>
+          </li>
+          <li>
+            <a href="#connect">Connect</a>
+          </li>
+          <li>
+            <a href="#countries">Countries</a>
+          </li>
+          <li>
+            <a href="#blog">Blog</a>
+          </li>
+          <li>
+            <a
+              onclick="location.href='index.html#contact'"
+              class="venturaButton"
+              id="mobileConsultationButton"
+            >
+              <i class="fa-solid fa-headset"></i> Book Free Consultation
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <!-- Hero Section -- After Navbar -->
@@ -261,6 +266,29 @@
             Secure your admission to a top university with our dedicated support
             and comprehensive application strategies.
           </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mentor Connect Section -->
+    <section id="connect">
+      <p class="connectHead">Discover. <span>Connect. </span>Succeed.</p>
+      <div class="row">
+        <div class="col-md-6" style="text-align: center">
+          <img
+            src="Assets/mentorConnect.png"
+            alt="Mentor Connect Image"
+            id="mentorConnectHome"
+          />
+        </div>
+        <div class="col-md-6" id="mentorConnectHomeRight">
+          <p class="mentorConnectHomeHead">Learn from Expert Mentors</p>
+          <p class="mentorConnectHomeText">
+            Connect with experienced mentors who have successfully navigated
+            their study abroad journeys. Gain valuable insights, guidance, and
+            support to achieve your academic and career goals with confidence.
+          </p>
+          <a href="connect.html" class="venturaButton"> Mentor Connect </a>
         </div>
       </div>
     </section>
@@ -420,16 +448,16 @@
 
     <div id="numbers" class="row">
       <div class="col-md-4 statDiv">
-        <p class="num">20,000+</p>
+        <p class="num">09,000+</p>
         <p class="numText">Students Landed in their Dream Universities</p>
       </div>
       <div class="col-md-4 statDiv">
-        <p class="num">5+</p>
+        <p class="num">3+</p>
         <p class="numText">Years of Experience in Education Industry</p>
       </div>
       <div class="col-md-4 statDiv">
-        <p class="num">12+</p>
-        <p class="numText">Ventura Present in 12+ Countries across the world</p>
+        <p class="num">11+</p>
+        <p class="numText">Ventura Present in 11+ Countries across the world</p>
       </div>
     </div>
 
@@ -545,8 +573,6 @@
             <a href="australia.html" class="venturaButton"> Know more </a>
           </div>
         </div>
-        <div class="col-md-4 countryCardOuterDiv"></div>
-        <div class="col-md-4 countryCardOuterDiv"></div>
       </div>
     </section>
 
@@ -734,17 +760,16 @@
     <section id="contact">
       <p class="VenturaSectionHeading">Get in Touch</p>
       <p class="VenturaSectionSubheading">
-        Lorem ipsum dolor sit amet consectetur <br />
-        adipisicing elit. Delectus, facilis?
+        Contact us today for personalized advice and <br />
+        support on your journey to studying abroad.
       </p>
       <div class="row">
         <div class="col-md-6" id="contactSectionLeft">
           <div class="getInTouchDetails">
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod
-              aspernatur reiciendis officiis sunt nostrum. Saepe quae assumenda
-              illo adipisci eos eius alias, impedit, excepturi molestiae
-              veritatis iste rem, sapiente temporibus.
+              Reach out to us for expert guidance and support on your study
+              abroad journey. Our dedicated team is here to help you every step
+              of the way, from application to arrival.
             </p>
             <p class="detailContact">
               <ion-icon name="call-outline"></ion-icon> +91 XXXXX XXXXX
@@ -832,8 +857,8 @@
     <div id="mobileSectionContact">
       <p class="VenturaSectionHeading">Get in Touch</p>
       <p class="VenturaSectionSubheading">
-        Lorem ipsum dolor sit amet consectetur <br />
-        adipisicing elit. Delectus, facilis?
+        Contact us today for personalized advice and support on your journey to
+        studying abroad.
       </p>
       <div class="row">
         <div class="col-md-6" id="contactSectionLeft">
@@ -870,10 +895,9 @@
         <div class="col-md-6" id="contactSectionRight">
           <div class="getInTouchDetails">
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod
-              aspernatur reiciendis officiis sunt nostrum. Saepe quae assumenda
-              illo adipisci eos eius alias, impedit, excepturi molestiae
-              veritatis iste rem, sapiente temporibus.
+              Reach out to us for expert guidance and support on your study
+              abroad journey. Our dedicated team is here to help you every step
+              of the way, from application to arrival.
             </p>
             <p class="detailContact">
               <ion-icon name="call-outline"></ion-icon> +91 XXXXX XXXXX
@@ -889,8 +913,8 @@
           <div id="SocialsTouch">
             <p id="SocialsTouchHeading">Our Socials</p>
             <p id="SocialsTouchSubheading">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-              soluta molestiae, est hic aperiam dicta.
+              Stay updated with the latest news, events, and resources by
+              connecting with us on our social media channels.
             </p>
             <div id="navSocials">
               <a href="#">
@@ -937,8 +961,8 @@
             id="footerLogo"
           />
           <p id="footerLogoText">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-            asperiores repellendus quisquam suscipit qui, voluptates ipsa sunt
+            Empowering students with personalized guidance, ensuring a seamless
+            journey from application to top university admission.
           </p>
         </div>
         <div class="col-md-4" id="footerRowTwo">

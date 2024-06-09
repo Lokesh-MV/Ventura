@@ -125,12 +125,20 @@ img#smnavBarLogo {
   align-items: baseline;
   width: 100%;
   height: fit-content;
+  position: sticky;
+  background-color: #f9f9f9 !important;
 }
-#smNavBarContent {
+div#smNavBarContent {
   display: none;
   border-top: 1px solid #d9d9d9;
-  z-index: 99991;
   transition: ease-in-out 2s;
+  background-color: #f9f9f9 !important;
+}
+div#mobileNavOuter {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 99999999999999;
 }
 #smNavBarSocials {
   float: left;
@@ -152,6 +160,8 @@ img#smnavBarLogo {
   list-style: none;
   width: 70%;
   z-index: 9999;
+  background-color: #f9f9f9;
+  padding: 10px 0px;
 }
 #smNavBarMenu li {
   margin: 12px 0;
@@ -264,6 +274,11 @@ a.venturaButton i {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    background-color: #f9f9f9;
   }
   #heroMainLeft {
     padding: 12px 28px 36px !important;
@@ -1046,4 +1061,86 @@ button.connectButton {
   padding: 4px;
   border: none;
   border-radius: 4px;
+}
+/* mentor Connect Styles */
+section#connect {
+  padding: 24px 48px;
+}
+p.connectHead {
+  text-align: center;
+  font-size: 52px;
+  color: #424141;
+  font-weight: 600;
+}
+p.connectHead span {
+  color: #5271ff;
+}
+#mentorConnectHome {
+  width: 90%;
+}
+#mentorConnectHomeRight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mentorConnectHomeHead {
+  /* align-self: flex-start; */
+  color: #525255;
+  font-size: 32px;
+  font-weight: 600;
+}
+.mentorConnectHomeText {
+  color: #9c9c9c;
+  text-align: center;
+  width: 90%;
+}
+
+/* Animation Styles */
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.3;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.col-md-6,
+#hero,
+.processDiv,
+#mentorConnectHomeRight,
+.serviceCard,
+.statDiv,
+.countryCard,
+.blogCard {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+}
+#mobileConsultationButton {
+  color: #f9f9f9 !important;
+}
+#mobileConsultationButton i {
+  transform: rotate(0deg) !important;
+  padding: 0 4px;
+}
+@media only screen and (max-width: 900px) {
+  section#connect {
+    padding: 24px;
+  }
+  .connectHead {
+    font-size: 28px !important;
+  }
+  .mentorConnectHomeHead {
+    font-size: 24px !important;
+  }
+  .mentorConnectHomeText {
+    display: none;
+  }
+}
+.blogCardInternal a {
+  text-decoration: none;
 }
