@@ -34,14 +34,17 @@
     <nav id="largeScreensNavBar">
       <div id="contactInfo">
         <div id="navSocials">
-          <a href="https://www.instagram.com" target="_blank">
+          <a href="https://www.instagram.com/ventura_abroad" target="_blank">
             <img
               src="Assets/instagramIcon.png"
               alt="Instagram Icon"
               class="navSocialsIcon"
             />
           </a>
-          <a href="https://www.linkedin.com" target="_blank">
+          <a
+            href="https://www.linkedin.com/company/ventura-overseas-education/"
+            target="_blank"
+          >
             <img
               src="Assets/linkedInIcon.png"
               alt="LinkedIn Icon"
@@ -55,7 +58,10 @@
               class="navSocialsIcon"
             />
           </a>
-          <a href="https://www.facebook.com" target="_blank">
+          <a
+            href="https://www.facebook.com/profile.php?id=61560994195889&mibextid=LQQJ4d"
+            target="_blank"
+          >
             <img
               src="Assets/facebookIcon.png"
               alt="Facebook Icon"
@@ -67,7 +73,7 @@
         <div id="navContactDetails">
           <div id="navPhone">
             <ion-icon name="call-outline"></ion-icon>
-            <p style="margin-bottom: 0">+91 XXXXX XXXXX</p>
+            <p style="margin-bottom: 0">+91 96184 95451</p>
           </div>
           <div id="navMail">
             <ion-icon name="mail-outline"></ion-icon>
@@ -75,7 +81,7 @@
           </div>
           <div id="navLocation">
             <ion-icon name="location-outline"></ion-icon>
-            <p style="margin-bottom: 0">Nellore, Andhra Pradesh</p>
+            <p style="margin-bottom: 0">Kakinada, Andhra Pradesh</p>
           </div>
         </div>
       </div>
@@ -100,7 +106,7 @@
     <!-- Mobile Section Navbar -->
     <div id="mobileNavOuter">
       <nav id="mobileScreensNavBar">
-        <a href="#">
+        <a href="index.html">
           <img
             src="Assets/VenturaLogo.png"
             alt="Ventura Consultancy Logo"
@@ -113,14 +119,18 @@
       </nav>
       <div id="smNavBarContent" style="background-color: #f9f9f9">
         <div id="smNavBarSocials">
-          <a href="https://www.instagram.com">
+          <a
+            href="https://www.instagram.com/ventura_abroad?igsh=Z2Foa282aTR1bXJi&utm_source=qr"
+          >
             <img
               src="Assets/instagramIcon.png"
               alt="Instagram Icon"
               class="navSocialsIcon"
             />
           </a>
-          <a href="https://www.linkedin.com">
+          <a
+            href="https://www.linkedin.com/company/ventura-overseas-education/"
+          >
             <img
               src="Assets/linkedInIcon.png"
               alt="LinkedIn Icon"
@@ -134,7 +144,9 @@
               class="navSocialsIcon"
             />
           </a>
-          <a href="https://www.facebook.com">
+          <a
+            href="https://www.facebook.com/profile.php?id=61560994195889&mibextid=LQQJ4d"
+          >
             <img
               src="Assets/facebookIcon.png"
               alt="Facebook Icon"
@@ -772,13 +784,13 @@
               of the way, from application to arrival.
             </p>
             <p class="detailContact">
-              <ion-icon name="call-outline"></ion-icon> +91 XXXXX XXXXX
+              <ion-icon name="call-outline"></ion-icon> +91 9618495451
             </p>
             <p class="detailContact">
               <ion-icon name="mail-outline"></ion-icon> info@venturaoverseas.com
             </p>
             <p class="detailContact">
-              <ion-icon name="location-outline"></ion-icon> Nellore, Andhra
+              <ion-icon name="location-outline"></ion-icon> Kakinada, Andhra
               Pradesh
             </p>
           </div>
@@ -789,28 +801,32 @@
               connecting with us on our social media channels.
             </p>
             <div id="navSocials">
-              <a href="#">
+              <a href="https://www.instagram.com/ventura_abroad">
                 <img
                   src="Assets/instagramIcon.png"
                   alt="Instagram Icon"
                   class="navSocialsIcon"
                 />
               </a>
-              <a href="#">
+              <a
+                href="https://www.linkedin.com/company/ventura-overseas-education/"
+              >
                 <img
                   src="Assets/linkedInIcon.png"
                   alt="LinkedIn Icon"
                   class="navSocialsIcon"
                 />
               </a>
-              <a href="#">
+              <a href="https://www.youtube.com">
                 <img
                   src="Assets/youtubeIcon.png"
                   alt="Youtube Icon"
                   class="navSocialsIcon"
                 />
               </a>
-              <a href="#">
+              <a
+                href="https://www.facebook.com/profile.php?id=61560994195889&mibextid=LQQJ4d"
+              >
                 <img
                   src="Assets/facebookIcon.png"
                   alt="Facebook Icon"
@@ -824,13 +840,20 @@
           <div id="formOuterDiv">
             <form action="/" id="contactForm">
               <label for="name"> Enter your name </label>
-              <input type="text" name="name" id="name" placeholder="John Doe" />
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="John Doe"
+                required
+              />
               <label for="email">Enter your email</label>
               <input
                 type="email"
                 name="email"
                 id="email"
                 placeholder="Eg:johndoe@gmail.com"
+                required
               />
               <label for="mobile">Enter your mobile</label>
               <input
@@ -838,18 +861,20 @@
                 id="mobile"
                 name="mobile"
                 placeholder="Eg:1231231231"
+                required
               />
               <label for="message">Enter your message</label>
               <textarea
                 name="message"
                 id="message"
                 placeholder="Tap here to enter your message"
+                required
               ></textarea>
+              <button class="messageButton" type="button" onclick="sendEmail()">
+                Send message <ion-icon name="send-outline"></ion-icon>
+              </button>
             </form>
           </div>
-          <button class="messageButton">
-            Send message <ion-icon name="send-outline"></ion-icon>
-          </button>
         </div>
       </div>
     </section>
@@ -865,32 +890,41 @@
           <div id="formOuterDiv">
             <form action="/" id="contactForm">
               <label for="name"> Enter your name </label>
-              <input type="text" name="name" id="name" placeholder="John Doe" />
+              <input
+                type="text"
+                name="name"
+                id="nameMobile"
+                placeholder="John Doe"
+              />
               <label for="email">Enter your email</label>
               <input
                 type="email"
                 name="email"
-                id="email"
+                id="emailMobile"
                 placeholder="Eg:johndoe@gmail.com"
               />
               <label for="mobile">Enter your mobile</label>
               <input
                 type="number"
-                id="mobile"
+                id="mobileMobile"
                 name="mobile"
                 placeholder="Eg:1231231231"
               />
               <label for="message">Enter your message</label>
               <textarea
                 name="message"
-                id="message"
+                id="messageMobile"
                 placeholder="Tap here to enter your message"
               ></textarea>
+              <button
+                type="button"
+                class="messageButton"
+                onclick="sendEmailMobile()"
+              >
+                Send message <ion-icon name="send-outline"></ion-icon>
+              </button>
             </form>
           </div>
-          <button class="messageButton">
-            Send message <ion-icon name="send-outline"></ion-icon>
-          </button>
         </div>
         <div class="col-md-6" id="contactSectionRight">
           <div class="getInTouchDetails">
@@ -900,13 +934,13 @@
               of the way, from application to arrival.
             </p>
             <p class="detailContact">
-              <ion-icon name="call-outline"></ion-icon> +91 XXXXX XXXXX
+              <ion-icon name="call-outline"></ion-icon> +91 96184 95451
             </p>
             <p class="detailContact">
               <ion-icon name="mail-outline"></ion-icon> info@venturaoverseas.com
             </p>
             <p class="detailContact">
-              <ion-icon name="location-outline"></ion-icon> Nellore, Andhra
+              <ion-icon name="location-outline"></ion-icon> Kakinada, Andhra
               Pradesh
             </p>
           </div>
@@ -917,28 +951,35 @@
               connecting with us on our social media channels.
             </p>
             <div id="navSocials">
-              <a href="#">
+              <a
+                href="https://www.instagram.com/ventura_abroad"
+                target="_blank"
+              >
                 <img
                   src="Assets/instagramIcon.png"
                   alt="Instagram Icon"
                   class="navSocialsIcon"
                 />
               </a>
-              <a href="#">
+              <a
+                href="https://www.linkedin.com/company/ventura-overseas-education/"
+              >
                 <img
                   src="Assets/linkedInIcon.png"
                   alt="LinkedIn Icon"
                   class="navSocialsIcon"
                 />
               </a>
-              <a href="#">
+              <a href="https://www.youtube.com">
                 <img
                   src="Assets/youtubeIcon.png"
                   alt="Youtube Icon"
                   class="navSocialsIcon"
                 />
               </a>
-              <a href="#">
+              <a
+                href="https://www.facebook.com/profile.php?id=61560994195889&mibextid=LQQJ4d"
+              >
                 <img
                   src="Assets/facebookIcon.png"
                   alt="Facebook Icon"
@@ -961,53 +1002,58 @@
             id="footerLogo"
           />
           <p id="footerLogoText">
-            Empowering students with personalized guidance, ensuring a seamless
-            journey from application to top university admission.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+            asperiores repellendus quisquam suscipit qui, voluptates ipsa sunt
           </p>
         </div>
         <div class="col-md-4" id="footerRowTwo">
           <p class="VenturaSectionHeading">Important links</p>
           <ul>
-            <li><a href="#countries">Education Destinations</a></li>
-            <li><a href="#services">Our Services</a></li>
-            <li><a href="#">Mentor Connect</a></li>
-            <li><a href="#">Preparation Material</a></li>
-            <li><a href="#blog">Blog</a></li>
+            <li><a href="index.html#countries">Education Destinations</a></li>
+            <li><a href="index.html#services">Our Services</a></li>
+            <li><a href="index.html#connect">Mentor Connect</a></li>
+            <li><a href="examPreparation.html">Preparation Material</a></li>
+            <li><a href="index.html#blog">Blog</a></li>
           </ul>
         </div>
         <div class="col-md-4" id="footerRowThree">
           <p class="footerContact">
-            <ion-icon name="call-outline"></ion-icon> +91 XXXXX XXXXX
+            <ion-icon name="call-outline"></ion-icon> +91 96184 95451
           </p>
           <p class="footerContact">
             <ion-icon name="mail-outline"></ion-icon> info@venturaoverseas.com
           </p>
           <p class="footerContact">
-            <ion-icon name="location-outline"></ion-icon>Nellore, Andhra Pradesh
+            <ion-icon name="location-outline"></ion-icon>Kakinada, Andhra
+            Pradesh
           </p>
           <div id="navSocials">
-            <a href="#">
+            <a href="https://www.instagram.com/ventura_abroad">
               <img
                 src="Assets/instagramIcon.png"
                 alt="Instagram Icon"
                 class="navSocialsIcon"
               />
             </a>
-            <a href="#">
+            <a
+              href="https://www.linkedin.com/company/ventura-overseas-education/"
+            >
               <img
                 src="Assets/linkedInIcon.png"
                 alt="LinkedIn Icon"
                 class="navSocialsIcon"
               />
             </a>
-            <a href="#">
+            <a href="https://www.youtube.com">
               <img
                 src="Assets/youtubeIcon.png"
                 alt="Youtube Icon"
                 class="navSocialsIcon"
               />
             </a>
-            <a href="#">
+            <a
+              href="https://www.facebook.com/profile.php?id=61560994195889&mibextid=LQQJ4d"
+            >
               <img
                 src="Assets/facebookIcon.png"
                 alt="Facebook Icon"
@@ -1025,6 +1071,7 @@
     </section>
 
     <!-- Ion Icons Link -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
